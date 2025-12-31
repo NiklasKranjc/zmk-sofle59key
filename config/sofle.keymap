@@ -82,6 +82,20 @@
             bindings = <&kp LS(DOUBLE_QUOTES) &kp SPACE>;
             label = "ANFUERHRUNGSZEICHEN";
         };
+
+        sticky_ss: sticky_super_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LGUI>, <&sk LSHFT>;
+            label = "STICKY_SUPER_SHIFT";
+        };
+
+        sticky_ssa: sticky_super_shift_alt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LGUI>, <&sk LSHFT>, <&sk LALT>;
+            label = "STICKY_SUPER_SHIFT_ALT";
+        };
     };
 
     keymap {
