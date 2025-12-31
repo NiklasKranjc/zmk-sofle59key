@@ -86,15 +86,26 @@
         sticky_ss: sticky_super_shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LGUI>, <&sk LSHFT>;
+            bindings = <&skq LGUI &skq LSHFT>;
             label = "STICKY_SUPER_SHIFT";
         };
 
         sticky_ssa: sticky_super_shift_alt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LGUI>, <&sk LSHFT>, <&sk LALT>;
+            bindings = <&skq LGUI &skq LSHFT &skq LALT>;
             label = "STICKY_SUPER_SHIFT_ALT";
+        };
+    };
+
+    behaviors {
+        skq: skq {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SKQ";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            quick-release;
+            release-after-ms = <3000>;
         };
     };
 
@@ -157,11 +168,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans      &trans     &trans       &trans       &trans                           &trans     &trans    &trans    &trans     &trans   &trans
-&trans  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                           &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
-&trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &kp K_PASTE    &trans  &trans     &trans    &trans    &trans     &trans   &trans
-                    &trans     &trans       &trans       &trans    &trans         &trans  &trans     &trans    &trans    &trans
+&trans  &trans      &trans     &trans       &trans       &trans                           &trans     &trans     &trans      &trans       &trans   &trans
+&trans  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                           &kp PG_UP  &trans     &kp UP      &trans       &kp N0   &trans
+&trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                         &kp PG_DN  &kp LEFT   &kp DOWN    &kp RIGHT    &kp DEL  &kp BSPC
+&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &kp K_PASTE    &trans  &trans     &skq LGUI  &sticky_ss  &sticky_ssa  &trans   &trans
+                    &trans     &trans       &trans       &trans    &trans         &trans  &trans     &trans     &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
