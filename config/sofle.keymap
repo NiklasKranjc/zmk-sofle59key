@@ -88,6 +88,7 @@
             #binding-cells = <0>;
             bindings = <&skq LGUI &skq LSHFT>;
             label = "STICKY_SUPER_SHIFT";
+            wait-ms = <10>;
         };
 
         sticky_ssa: sticky_super_shift_alt {
@@ -95,6 +96,7 @@
             #binding-cells = <0>;
             bindings = <&skq LGUI &skq LSHFT &skq LALT>;
             label = "STICKY_SUPER_SHIFT_ALT";
+            wait-ms = <10>;
         };
     };
 
