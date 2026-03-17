@@ -73,6 +73,11 @@
             bindings = <&kp RA(S)>;
             key-positions = <26 27>;
         };
+
+        stickyLeftALT {
+            bindings = <&sk LEFT_ALT>;
+            key-positions = <24 35>;
+        };
     };
 
     macros {
@@ -97,6 +102,13 @@
             bindings = <&skq LGUI &skq LALT &skq LSHFT>;
             label = "STICKY_SUPER_SHIFT_ALT";
             wait-ms = <10>;
+        };
+
+        EuroAnsiInt: EuroAnsiInt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(NUMBER_4))>;
+            label = "EUROANSIINT";
         };
     };
 
@@ -131,11 +143,11 @@
 &kp ESC           &kp N1  &kp N2            &kp N3            &kp N4        &kp N5                              &kp N6     &kp N7         &kp N8            &kp N9        &kp N0    &kp MINUS
 &kp TAB           &kp Q   &kp W             &kp E             &kp R         &kp T                               &kp Y      &kp U          &kp I             &kp O         &kp P     &kp BSPC
 &kp LEFT_CONTROL  &kp A   &kp S             &kp D             &kp F         &kp G                               &kp H      &kp J          &kp K             &kp L         &kp SEMI  &anfuerhrungszeichen
-&kp LEFT_SHIFT    &kp Z   &kp X             &kp C             &kp V         &kp B      &kp C_MUTE    &kp EQUAL  &kp N      &kp M          &kp COMMA         &kp DOT       &kp FSLH  &kp RSHFT
+&kp LEFT_SHIFT    &kp Z   &kp X             &kp C             &kp V         &kp B      &kp C_MUTE    &mkp MB1   &kp N      &kp M          &kp COMMA         &kp DOT       &kp FSLH  &kp RSHFT
                           &kp LC(LEFT_GUI)  &kp LS(LEFT_GUI)  &kp LEFT_GUI  &mo LOWER  &kp SPACE     &kp ENTER  &mo RAISE  &kp RIGHT_GUI  &kp LS(LEFT_GUI)  &kp LA(RGUI)
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
@@ -150,11 +162,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans        &kp F1     &kp F2    &kp F3    &kp F4     &kp F5                       &kp F6          &kp F7         &kp F8          &kp F9                &kp F10                &kp F11
-&trans        &kp N1     &kp N2    &kp N3    &kp N4     &kp N5                       &kp CARET       &kp AMPERSAND  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
-&kp LEFT_ALT  &kp EXCL   &kp AT    &kp HASH  &kp DLLR   &kp PRCNT                    &kp MINUS       &kp EQUAL      &kp ASTRK       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT
-&trans        &kp EQUAL  &mkp MB1  &mkp MB3  &mkp RCLK  &kp RBRC   &trans    &trans  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
-                         &trans    &trans    &trans     &trans     &trans    &trans  &trans          &trans         &trans          &trans
+&trans        &kp F1    &kp F2    &kp F3    &kp F4    &kp F5                          &kp F6     &kp F7     &kp F8     &kp F9            &kp F10            &kp F11
+&trans        &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                          &kp N6     &kp N7     &kp N8     &kp N9            &kp N0             &kp F12
+&sk LEFT_ALT  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT                       &kp CARET  &kp AMPS   &kp STAR   &kp LPAR          &kp RPAR           &kp SQT
+&trans        &trans    &mkp MB1  &mkp MB3  &mkp MB2  &EuroAnsiInt  &trans    &trans  &trans     &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
+                        &trans    &trans    &trans    &trans        &trans    &trans  &trans     &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -171,11 +183,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans      &trans     &trans       &trans       &trans                           &trans     &trans     &trans      &trans       &trans   &trans
-&trans  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                           &kp PG_UP  &trans     &kp UP      &trans       &kp N0   &trans
-&trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                         &kp PG_DN  &kp LEFT   &kp DOWN    &kp RIGHT    &kp DEL  &kp BSPC
-&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &kp K_PASTE    &trans  &trans     &skq LGUI  &sticky_ss  &sticky_ssa  &trans   &trans
-                    &trans     &trans       &trans       &trans    &trans         &trans  &trans     &trans     &trans      &trans
+&trans  &trans      &trans     &trans       &trans       &trans                           &trans     &trans    &trans      &trans       &trans   &trans
+&trans  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                           &kp PG_UP  &trans    &kp UP      &trans       &kp N0   &trans
+&trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                         &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT    &kp DEL  &kp BSPC
+&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &kp K_PASTE    &tog 6  &trans     &tog 6    &sticky_ss  &sticky_ssa  &trans   &trans
+                    &trans     &trans       &trans       &trans    &trans         &trans  &trans     &trans    &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -228,6 +240,26 @@
 &kp LSHFT  &kp A   &kp S     &kp D     &kp F      &kp G                           &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp APOS
 &kp LCTRL  &kp Z   &kp X     &kp C     &kp V      &kp B   &tog 5       &kp EQUAL  &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
                    &kp LGUI  &kp LALT  &kp LCTRL  &trans  &kp SPACE    &kp ENTER  &trans  &kp RCTRL  &kp RALT   &kp RGUI
+            >;
+        };
+
+        MausUndCAD {
+            bindings = <
+&kp ESC           &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans     &trans          &trans         &kp MINUS
+&kp TAB           &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y     &kp U     &kp I      &kp O           &kp P          &kp BACKSPACE
+&kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H     &kp J     &kp K      &kp L           &kp SEMICOLON  &kp RIGHT_CONTROL
+&kp RSHFT         &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &tog 6  &kp N     &kp M     &kp COMMA  &kp DOT         &kp FSLH       &kp RSHFT
+                          &trans  &trans  &trans  &mo 7   &trans    &trans  &mkp MB1  &mkp MB3  &mkp MB2   &kp SCROLLLOCK
+            >;
+        };
+
+        CADnachMaus {
+            bindings = <
+&trans     &trans     &trans        &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp COMMA  &kp DOT    &kp NUMBER_1  &kp N2  &kp N3  &kp BSPC                     &trans  &trans  &trans  &trans  &trans  &trans
+&kp N8     &kp EQUAL  &kp N4        &kp N5  &kp N6  &kp EQUAL                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp FSLH   &kp MINUS  &kp N7        &kp N8  &kp N9  &kp N0     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                      &trans        &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
