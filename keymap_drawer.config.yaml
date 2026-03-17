@@ -1,0 +1,24 @@
+draw_config:
+  footer_text: "Sofle Keyboard - ZMK Keymap"
+  dark_mode: auto
+  svg_extra_style: |
+    /* Custom styling */
+    svg.keymap {
+      font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    }
+
+parse_config:
+  raw_binding_map:
+    "&anfuerhrungszeichen": "\" "
+    "&sticky_ss": "Sticky\nSuper+Shift"
+    "&sticky_ssa": "Sticky\nSup+Alt+Shft"
+    "&EuroAnsiInt": "€"
+    "&skq": "Sticky"
+    "&studio_unlock": "Studio\nUnlock"
+    "&caps_word": "Caps Word"
+    "&ext_power EP_TOG": "Ext Pwr\nToggle"
+    "&mkp MB1": "🖱️ Left"
+    "&mkp MB3": "🖱️ Mid"
+    "&mkp MB2": "🖱️ Right"
+    "&mkp LCLK": "🖱️ Left"
+    "&mkp RCLK": "🖱️ Right"
