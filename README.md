@@ -1,6 +1,8 @@
 # Sofle Choc 1 Encoder
 *my shop https://keyboard-hoarders.com & https://keyboardhoarders.etsy.com*
 
+> **Upstream**: Forked from [KeyboardHoarders/zmk-sofle59key](https://github.com/KeyboardHoarders/zmk-sofle59key) with custom keymap, combos, macros, and additional layers.
+
 ![59key](https://github.com/user-attachments/assets/d4e1a4c2-87b7-4b6a-aeb6-3dece8e13aaf)
 
 
@@ -8,6 +10,10 @@
 
 
 ![sofle59keyEncRight](https://github.com/user-attachments/assets/dff333a7-ba96-4db6-8968-be696cdbb430)
+
+## Keymap Backup
+
+A comprehensive human-readable backup of the complete keyboard layout (all 8 layers, combos, macros, behaviors, and firmware settings) is stored in [`KEYMAP_BACKUP.md`](KEYMAP_BACKUP.md).
 
 ## Keymap Visualizations
 
