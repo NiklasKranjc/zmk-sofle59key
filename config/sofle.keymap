@@ -40,7 +40,7 @@
         compatible = "zmk,combos";
 
         backspace {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp BSPC>;
             key-positions = <32 31>;
         };
 
@@ -84,7 +84,7 @@
         anfuerhrungszeichen: anfuerhrungszeichen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(DOUBLE_QUOTES) &kp SPACE>;
+            bindings = <&kp LS(SQT) &kp SPACE>;
             label = "ANFUERHRUNGSZEICHEN";
         };
 
@@ -107,7 +107,7 @@
         EuroAnsiInt: EuroAnsiInt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(NUMBER_4))>;
+            bindings = <&kp LA(LC(N4))>;
             label = "EUROANSIINT";
         };
     };
@@ -246,10 +246,10 @@
         MausUndCAD {
             bindings = <
 &kp ESC           &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans     &trans          &trans         &kp MINUS
-&kp TAB           &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y     &kp U     &kp I      &kp O           &kp P          &kp BACKSPACE
-&kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H     &kp J     &kp K      &kp L           &kp SEMICOLON  &kp RIGHT_CONTROL
+&kp TAB           &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y     &kp U     &kp I      &kp O           &kp P          &kp BSPC
+&kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H     &kp J     &kp K      &kp L           &kp SEMI       &kp RCTRL
 &kp RSHFT         &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &tog 6  &kp N     &kp M     &kp COMMA  &kp DOT         &kp FSLH       &kp RSHFT
-                          &trans  &trans  &trans  &mo 7   &trans    &trans  &mkp MB1  &mkp MB3  &mkp MB2   &kp SCROLLLOCK
+                          &trans  &trans  &trans  &mo 7   &trans    &trans  &mkp MB1  &mkp MB3  &mkp MB2   &kp SLCK
             >;
         };
 

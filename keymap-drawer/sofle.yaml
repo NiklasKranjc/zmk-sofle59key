@@ -281,7 +281,7 @@ layers:
   - I
   - O
   - P
-  - BACKSPACE
+  - BSPC
   - LEFT CONTROL
   - A
   - S
@@ -293,7 +293,7 @@ layers:
   - K
   - L
   - ;
-  - RIGHT CONTROL
+  - RCTRL
   - RSHFT
   - Z
   - X
@@ -317,7 +317,7 @@ layers:
   - 🖱️ Left
   - 🖱️ Mid
   - 🖱️ Right
-  - SCROLLLOCK
+  - SLCK
   CADnachMaus:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -381,7 +381,7 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [32, 31]
-  k: BACKSPACE
+  k: BSPC
 - p: [27, 33]
   k: DELETE
 - p: [25, 41]
