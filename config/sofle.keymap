@@ -85,14 +85,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(SQT) &kp SPACE>;
-            label = "ANFUERHRUNGSZEICHEN";
         };
 
         sticky_ss: sticky_super_shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&skq LGUI &skq LSHFT>;
-            label = "STICKY_SUPER_SHIFT";
             wait-ms = <10>;
         };
 
@@ -100,7 +98,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&skq LGUI &skq LALT &skq LSHFT>;
-            label = "STICKY_SUPER_SHIFT_ALT";
             wait-ms = <10>;
         };
 
@@ -108,14 +105,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LC(N4))>;
-            label = "EUROANSIINT";
         };
     };
 
     behaviors {
         skq: skq {
             compatible = "zmk,behavior-sticky-key";
-            label = "SKQ";
             bindings = <&kp>;
             #binding-cells = <1>;
             quick-release;
