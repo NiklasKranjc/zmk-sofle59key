@@ -15,6 +15,19 @@ SVG visualizations of all keymap layers (including combos and macros) are auto-g
 
 To generate a PDF: open an SVG in your browser → `Ctrl+P` → **Save as PDF**.
 
+## Suppressing Node.js 20 Deprecation Warnings
+
+GitHub Actions shows Node.js 20 deprecation warnings during builds because the ZMK reusable workflow still uses actions pinned to Node.js 20. These warnings are **cosmetic** — the build works fine.
+
+To suppress them, set `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24` as a **repository variable**:
+
+1. Go to **Settings → Secrets and variables → Actions → Variables**
+2. Click **New repository variable**
+3. Name: `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24`
+4. Value: `true`
+
+> **Note:** This cannot be automated via a workflow because `GITHUB_TOKEN` does not have permission to set repository variables. It must be set manually.
+
 ## How bluetooth profiles work
 
 
