@@ -10,6 +10,40 @@ The authoritative files are `config/sofle.keymap` and `config/sofle.conf`.
 
 ---
 
+## Dateien zum Sichern (Files to Back Up)
+
+Um deine Keymap lokal zu sichern, lade diese Dateien herunter (z. B. über
+**Code → Download ZIP** auf GitHub, oder klicke einzelne Dateien an und wähle
+**Raw → Rechtsklick → Speichern unter**).
+
+### Wichtigste Dateien (deine persönliche Konfiguration)
+
+| Datei | Beschreibung |
+|---|---|
+| [`config/sofle.keymap`](config/sofle.keymap) | **Haupt-Keymap** — Layer, Combos, Makros, Behaviors |
+| [`config/sofle.conf`](config/sofle.conf) | **Firmware-Einstellungen** — Bluetooth, Sleep, Encoder, Name |
+
+### Build-Konfiguration (zum Kompilieren der Firmware)
+
+| Datei | Beschreibung |
+|---|---|
+| [`build.yaml`](build.yaml) | GitHub-Actions-Build-Matrix (Board-/Shield-Kombinationen) |
+| [`config/west.yml`](config/west.yml) | ZMK-Dependency-Manifest (Zephyr/West) |
+
+### Visualisierung (optional)
+
+| Datei | Beschreibung |
+|---|---|
+| [`keymap_drawer.config.yaml`](keymap_drawer.config.yaml) | Keymap-Drawer-Anzeigeeinstellungen |
+| [`keymap-drawer/sofle.yaml`](keymap-drawer/sofle.yaml) | Geparste Keymap für die SVG-Generierung |
+| [`keymap-drawer/sofle.svg`](keymap-drawer/sofle.svg) | Generiertes SVG-Bild deiner Keymap |
+
+> **Tipp:** Am einfachsten ist es, das gesamte Repository als ZIP herunterzuladen:
+> Gehe auf die [Repo-Hauptseite](https://github.com/NiklasKranjc/zmk-sofle59key),
+> klicke auf den grünen **Code**-Button und dann auf **Download ZIP**.
+
+---
+
 ## Layers Overview
 
 | # | Name           | Purpose                                    |
