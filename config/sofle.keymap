@@ -46,7 +46,7 @@
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <27 33>;
+            key-positions = <27 32>;
         };
 
         esc {
@@ -77,6 +77,11 @@
         stickyLeftALT {
             bindings = <&sk LEFT_ALT>;
             key-positions = <24 35>;
+        };
+
+        rightClick {
+            bindings = <&mkp MB2>;
+            key-positions = <44 43>;
         };
     };
 
@@ -240,11 +245,11 @@
 
         MausUndCAD {
             bindings = <
-&kp ESC           &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans     &trans          &trans         &kp MINUS
-&kp TAB           &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y     &kp U     &kp I      &kp O           &kp P          &kp BSPC
-&kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H     &kp J     &kp K      &kp L           &kp SEMI       &kp RCTRL
-&kp RSHFT         &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &tog 6  &kp N     &kp M     &kp COMMA  &kp DOT         &kp FSLH       &kp RSHFT
-                          &trans  &trans  &trans  &mo 7   &trans    &trans  &mkp MB1  &mkp MB3  &mkp MB2   &kp SLCK
+&kp ESC           &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans     &trans          &trans    &kp MINUS
+&kp TAB           &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y     &kp U     &kp I      &kp O           &kp P     &kp BSPC
+&kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H     &kp J     &kp K      &kp L           &kp SEMI  &kp RCTRL
+&kp RSHFT         &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &tog 6  &kp N     &kp M     &kp COMMA  &kp DOT         &kp FSLH  &kp RSHFT
+                          &trans  &trans  &trans  &mo 7   &trans    &trans  &mkp MB1  &mkp MB3  &mkp MB2   &kt SCROLLLOCK
             >;
         };
 
