@@ -408,10 +408,10 @@ svg.keymap {
 <text x="672" y="144" class="combo tap">BSPC</text>
 </g>
 <g class="combo combopos-1">
-<path d="M476,144 l-261,-3" class="combo"/>
-<path d="M476,144 l261,3" class="combo"/>
-<rect rx="6" ry="6" x="462" y="130" width="28" height="26" class="combo"/>
-<text x="476" y="144" class="combo tap">DELETE</text>
+<path d="M448,140 l-233,0" class="combo"/>
+<path d="M448,140 l233,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="127" width="28" height="26" class="combo"/>
+<text x="448" y="140" class="combo tap">DELETE</text>
 </g>
 <g class="combo combopos-2">
 <path d="M196,192 l-94,-15" class="combo"/>
@@ -443,6 +443,12 @@ svg.keymap {
 <tspan x="448" dy="-0.6em">LEFT</tspan><tspan x="448" dy="1.2em">ALT</tspan>
 </text>
 <text x="448" y="186" class="combo hold">sticky</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="542" y="197" width="28" height="26" class="combo"/>
+<text x="556" y="210" class="combo tap">
+<tspan x="556" dy="-0.6em">🖱️</tspan><tspan x="556" dy="1.2em">Right</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -702,10 +708,10 @@ svg.keymap {
 <text x="672" y="144" class="combo tap">BSPC</text>
 </g>
 <g class="combo combopos-1">
-<path d="M476,144 l-261,-3" class="combo"/>
-<path d="M476,144 l261,3" class="combo"/>
-<rect rx="6" ry="6" x="462" y="130" width="28" height="26" class="combo"/>
-<text x="476" y="144" class="combo tap">DELETE</text>
+<path d="M448,140 l-233,0" class="combo"/>
+<path d="M448,140 l233,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="127" width="28" height="26" class="combo"/>
+<text x="448" y="140" class="combo tap">DELETE</text>
 </g>
 <g class="combo combopos-2">
 <path d="M196,192 l-94,-15" class="combo"/>
@@ -737,6 +743,12 @@ svg.keymap {
 <tspan x="448" dy="-0.6em">LEFT</tspan><tspan x="448" dy="1.2em">ALT</tspan>
 </text>
 <text x="448" y="186" class="combo hold">sticky</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="542" y="197" width="28" height="26" class="combo"/>
+<text x="556" y="210" class="combo tap">
+<tspan x="556" dy="-0.6em">🖱️</tspan><tspan x="556" dy="1.2em">Right</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -999,10 +1011,10 @@ svg.keymap {
 <text x="672" y="144" class="combo tap">BSPC</text>
 </g>
 <g class="combo combopos-1">
-<path d="M476,144 l-261,-3" class="combo"/>
-<path d="M476,144 l261,3" class="combo"/>
-<rect rx="6" ry="6" x="462" y="130" width="28" height="26" class="combo"/>
-<text x="476" y="144" class="combo tap">DELETE</text>
+<path d="M448,140 l-233,0" class="combo"/>
+<path d="M448,140 l233,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="127" width="28" height="26" class="combo"/>
+<text x="448" y="140" class="combo tap">DELETE</text>
 </g>
 <g class="combo combopos-2">
 <path d="M196,192 l-94,-15" class="combo"/>
@@ -1034,6 +1046,12 @@ svg.keymap {
 <tspan x="448" dy="-0.6em">LEFT</tspan><tspan x="448" dy="1.2em">ALT</tspan>
 </text>
 <text x="448" y="186" class="combo hold">sticky</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="542" y="197" width="28" height="26" class="combo"/>
+<text x="556" y="210" class="combo tap">
+<tspan x="556" dy="-0.6em">🖱️</tspan><tspan x="556" dy="1.2em">Right</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1250,10 +1268,10 @@ svg.keymap {
 <text x="672" y="144" class="combo tap">BSPC</text>
 </g>
 <g class="combo combopos-1">
-<path d="M476,144 l-261,-3" class="combo"/>
-<path d="M476,144 l261,3" class="combo"/>
-<rect rx="6" ry="6" x="462" y="130" width="28" height="26" class="combo"/>
-<text x="476" y="144" class="combo tap">DELETE</text>
+<path d="M448,140 l-233,0" class="combo"/>
+<path d="M448,140 l233,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="127" width="28" height="26" class="combo"/>
+<text x="448" y="140" class="combo tap">DELETE</text>
 </g>
 <g class="combo combopos-2">
 <path d="M196,192 l-94,-15" class="combo"/>
@@ -1285,6 +1303,12 @@ svg.keymap {
 <tspan x="448" dy="-0.6em">LEFT</tspan><tspan x="448" dy="1.2em">ALT</tspan>
 </text>
 <text x="448" y="186" class="combo hold">sticky</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="542" y="197" width="28" height="26" class="combo"/>
+<text x="556" y="210" class="combo tap">
+<tspan x="556" dy="-0.6em">🖱️</tspan><tspan x="556" dy="1.2em">Right</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1500,10 +1524,10 @@ svg.keymap {
 <text x="672" y="144" class="combo tap">BSPC</text>
 </g>
 <g class="combo combopos-1">
-<path d="M476,144 l-261,-3" class="combo"/>
-<path d="M476,144 l261,3" class="combo"/>
-<rect rx="6" ry="6" x="462" y="130" width="28" height="26" class="combo"/>
-<text x="476" y="144" class="combo tap">DELETE</text>
+<path d="M448,140 l-233,0" class="combo"/>
+<path d="M448,140 l233,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="127" width="28" height="26" class="combo"/>
+<text x="448" y="140" class="combo tap">DELETE</text>
 </g>
 <g class="combo combopos-2">
 <path d="M196,192 l-94,-15" class="combo"/>
@@ -1535,6 +1559,12 @@ svg.keymap {
 <tspan x="448" dy="-0.6em">LEFT</tspan><tspan x="448" dy="1.2em">ALT</tspan>
 </text>
 <text x="448" y="186" class="combo hold">sticky</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="542" y="197" width="28" height="26" class="combo"/>
+<text x="556" y="210" class="combo tap">
+<tspan x="556" dy="-0.6em">🖱️</tspan><tspan x="556" dy="1.2em">Right</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1788,10 +1818,10 @@ svg.keymap {
 <text x="672" y="144" class="combo tap">BSPC</text>
 </g>
 <g class="combo combopos-1">
-<path d="M476,144 l-261,-3" class="combo"/>
-<path d="M476,144 l261,3" class="combo"/>
-<rect rx="6" ry="6" x="462" y="130" width="28" height="26" class="combo"/>
-<text x="476" y="144" class="combo tap">DELETE</text>
+<path d="M448,140 l-233,0" class="combo"/>
+<path d="M448,140 l233,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="127" width="28" height="26" class="combo"/>
+<text x="448" y="140" class="combo tap">DELETE</text>
 </g>
 <g class="combo combopos-2">
 <path d="M196,192 l-94,-15" class="combo"/>
@@ -1823,6 +1853,12 @@ svg.keymap {
 <tspan x="448" dy="-0.6em">LEFT</tspan><tspan x="448" dy="1.2em">ALT</tspan>
 </text>
 <text x="448" y="186" class="combo hold">sticky</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="542" y="197" width="28" height="26" class="combo"/>
+<text x="556" y="210" class="combo tap">
+<tspan x="556" dy="-0.6em">🖱️</tspan><tspan x="556" dy="1.2em">Right</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -2078,17 +2114,18 @@ svg.keymap {
 </g>
 <g transform="translate(756, 259)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">SLCK</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">SCROLLLOCK</tspan></text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="130" width="28" height="26" class="combo"/>
 <text x="672" y="144" class="combo tap">BSPC</text>
 </g>
 <g class="combo combopos-1">
-<path d="M476,144 l-261,-3" class="combo"/>
-<path d="M476,144 l261,3" class="combo"/>
-<rect rx="6" ry="6" x="462" y="130" width="28" height="26" class="combo"/>
-<text x="476" y="144" class="combo tap">DELETE</text>
+<path d="M448,140 l-233,0" class="combo"/>
+<path d="M448,140 l233,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="127" width="28" height="26" class="combo"/>
+<text x="448" y="140" class="combo tap">DELETE</text>
 </g>
 <g class="combo combopos-2">
 <path d="M196,192 l-94,-15" class="combo"/>
@@ -2120,6 +2157,12 @@ svg.keymap {
 <tspan x="448" dy="-0.6em">LEFT</tspan><tspan x="448" dy="1.2em">ALT</tspan>
 </text>
 <text x="448" y="186" class="combo hold">sticky</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="542" y="197" width="28" height="26" class="combo"/>
+<text x="556" y="210" class="combo tap">
+<tspan x="556" dy="-0.6em">🖱️</tspan><tspan x="556" dy="1.2em">Right</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -2370,10 +2413,10 @@ svg.keymap {
 <text x="672" y="144" class="combo tap">BSPC</text>
 </g>
 <g class="combo combopos-1">
-<path d="M476,144 l-261,-3" class="combo"/>
-<path d="M476,144 l261,3" class="combo"/>
-<rect rx="6" ry="6" x="462" y="130" width="28" height="26" class="combo"/>
-<text x="476" y="144" class="combo tap">DELETE</text>
+<path d="M448,140 l-233,0" class="combo"/>
+<path d="M448,140 l233,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="127" width="28" height="26" class="combo"/>
+<text x="448" y="140" class="combo tap">DELETE</text>
 </g>
 <g class="combo combopos-2">
 <path d="M196,192 l-94,-15" class="combo"/>
@@ -2405,6 +2448,12 @@ svg.keymap {
 <tspan x="448" dy="-0.6em">LEFT</tspan><tspan x="448" dy="1.2em">ALT</tspan>
 </text>
 <text x="448" y="186" class="combo hold">sticky</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="542" y="197" width="28" height="26" class="combo"/>
+<text x="556" y="210" class="combo tap">
+<tspan x="556" dy="-0.6em">🖱️</tspan><tspan x="556" dy="1.2em">Right</tspan>
+</text>
 </g>
 </g>
 </g>
