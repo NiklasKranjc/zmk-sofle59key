@@ -311,14 +311,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CADnachMaus
+  - NumpadUNDscroll_nachMaus
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - 🖱️ Left
   - 🖱️ Mid
   - 🖱️ Right
-  - {t: SCROLLLOCK, h: toggle}
-  CADnachMaus:
+  - NumpadUNDscroll_nachMaus
+  NumpadUNDscroll_nachMaus:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -349,7 +349,7 @@ layers:
   - '5'
   - '6'
   - '='
-  - {t: ▽, type: trans}
+  - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -364,7 +364,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&msc SCRL_UP'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -375,9 +375,9 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_RIGHT'
   - {t: ▽, type: trans}
 combos:
 - p: [32, 31]
